@@ -1,7 +1,13 @@
-<h1>{{title}}</h1>
-<h2>{{hero.name}} details!</h2>
-<div><label>id: </label>{{hero.id}}</div>
 <div>
-    <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name">
+    <div class="row text-center"><h1>Orders Administration</h1></div>
+    <br><br>
+
+    <div class="row ">
+        <div class="col-md-3"></div>
+        <div class="col-md-2"><button class="btn btn-primary btn-lg btn-block">Clientes</button></div>
+        <div class="col-md-2"><button class="btn btn-primary btn-lg btn-block">Pedidos</button></div>
+        <div class="col-md-2"><button class="btn btn-primary btn-lg btn-block">Productos</button></div>
+        <div class="col-md-3"></div>
+    </div>
+    <cliente></cliente>
 </div>
