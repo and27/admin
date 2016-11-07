@@ -9,7 +9,8 @@ export class AppService {
     constructor(private http:Http){}
     Url1="http://eparqin.com/json/ordenesjson.php";
     Url2="http://eparqin.com/json/detallejson.php";
-    join=[];
+    clientes=[];
+    pedidos=[];
 
     getC () {
         return this.http.get(this.Url1)
@@ -26,11 +27,5 @@ export class AppService {
 
     }
 
-    joiner(){
-        this.getC().subscribe(clientes=>this.join=clientes);
-        this.getP().subscribe(pedidos=>this.join=pedidos);
-
-
-    }
 }
 

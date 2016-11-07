@@ -16,6 +16,7 @@ import {Pedido} from "./app.component";
       <th>Id_item</th>
       <th>Id_CLiente</th>
       <th>Cantidad</th>
+      <th>Estado</th>
       <th>Subtotal</th>
       <th>Detalles</th>
     </tr>
@@ -25,8 +26,9 @@ import {Pedido} from "./app.component";
       <th>{{pedido.id_pedido}}</th>
       <td>{{pedido.nombre_item}}</td>
       <td></td>
-      <td>{{pedido.cantidad}}</td>     
-      <td>{{pedido.subtotal}}</td>
+      <td>{{pedido.cantidad}}</td> 
+     <td><input size="5" placeholder="null"></td>
+           <td>{{pedido.subtotal}}</td>
       <td><button (click)="ver()" class="btn btn-primary"><span class="glyphicon glyphicon-plus-sign"></span></button></td>
     </tr>
   </tbody>
@@ -42,10 +44,7 @@ import {Pedido} from "./app.component";
 <tr><td>Cantidad:</td><td>{{current.cantidad}}</td></tr>
 <tr><td>Subtotal:</td><td>{{current.subtotal}}</td></tr>
 <tr><td>Subtotal_iva:</td><td>{{current.subtotal_iva}}</td></tr>
-<tr><td>Nombre:</td><td>{{current.cantidad}}</td></tr>
-<tr><td>Nombre:</td><td>{{current.cantidad}}</td></tr>
-<tr><td>Nombre:</td><td>{{current.cantidad}}</td></tr>
-<tr><td>Nombre:</td><td>{{current.cantidad}}</td></tr>
+
 </table>
 </div>
                 
