@@ -1,13 +1,18 @@
+
 <div>
+
     <div class="row text-center"><h1>Orders Administration</h1></div>
     <br><br>
 
     <div class="row ">
+
+
         <div class="col-md-3"></div>
-        <div class="col-md-2"><button class="btn btn-primary btn-lg btn-block">Clientes</button></div>
-        <div class="col-md-2"><button class="btn btn-primary btn-lg btn-block">Pedidos</button></div>
-        <div class="col-md-2"><button class="btn btn-primary btn-lg btn-block">Productos</button></div>
+        <div class="col-md-3"><a class="btn btn-primary btn-lg btn-block" routerLink="/cliente">Clientes</a></div>
+        <div class="col-md-3"><a class="btn btn-primary btn-lg btn-block" routerLink="/pedido">Pedidos</a></div>
         <div class="col-md-3"></div>
+
+
     </div>
-    <cliente></cliente>
+    <router-outlet></router-outlet>
 </div>
