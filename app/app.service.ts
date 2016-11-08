@@ -24,8 +24,8 @@ export class AppService {
 
             .map((res:Response) => res.json());
 
-
     }
+
 
 }
 

@@ -1,6 +1,5 @@
 import {Component} from "@angular/core";
 import {AppService} from "./app.service";
-import {Pedido} from "./app.component";
 
 @Component({
     selector:"cliente",
@@ -26,7 +25,7 @@ import {Pedido} from "./app.component";
     </tr>
   </thead>
   <tbody>
-    <tr (click)="mostrar(cliente)" #client *ngFor ="let cliente of clientes">
+    <tr (click)="detalles(cliente)" #client *ngFor ="let cliente of clientes">
     
       <td>{{cliente.nombre}}</td>
       <td>{{cliente.apellido}}</td>
@@ -74,22 +73,19 @@ styleUrls:["app/cliente.component.css"]
 
 export class ClienteComponent{
     constructor(private appservice:AppService){
-        this.getPedidos();
+        this.getClientes();
     }
-current:Pedido;
-clientes:Pedido[];
-show=false;
+current;
+clientes=[];
 
-    getPedidos() {
 
+    getClientes() {
         this.appservice.getC()
-            .subscribe(pedidos => this.clientes = pedidos);
-
+            .subscribe(cliente => this.clientes = cliente);
 
     }
 
-    mostrar(cliente){
-
+    detalles(cliente){
         this.current=cliente;
     }
 
