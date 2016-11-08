@@ -1,7 +1,7 @@
 # Orders Administration
 
-BUILD:
-npm build.
+INSTALL:
+npm install.
 
 RUN:
 npm start.
